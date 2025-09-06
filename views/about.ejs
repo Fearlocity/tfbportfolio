@@ -7,15 +7,50 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav>
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Contact</a>
+    <nav style="display: flex; align-items: center; justify-content: space-between;">
+        <div style="display: flex; align-items: center; gap: 0.7em;">
+            <img src="/logo.png" alt="Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.07);background:#fff;" />
+            <span style="font-size:1.25em;font-weight:700;letter-spacing:0.5px;color:#4fd1c5;">Timothy Bryant</span>
+        </div>
+        <div style="display: flex; gap: 1.5em;">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/projects">Projects</a>
+            <a href="/contact">Contact</a>
+        </div>
     </nav>
-    <main>
-        <h1>About Me</h1>
-        <p>Short bio and skills go here.</p>
+    <main style="display:flex; flex-direction:column; align-items:center; justify-content:flex-start; min-height:calc(80vh - 60px); width:96vw; max-width:1600px; margin:0 auto; text-align:center; padding-top:2.5em;">
+        <h1 style="font-size:3.5rem; margin-bottom:0.3em;">About Me</h1>
+        <section style="margin-bottom:2.5em; width:100%;">
+            <h2 style="color:#4fd1c5; font-size:2rem; margin-bottom:0.5em; font-weight:700;">Bio</h2>
+            <p style="font-size:1.25rem; max-width:800px; margin:0 auto;">I am a software developer and aspiring data analyst with a strong background in building web applications and solving real-world problems with code. I enjoy learning new technologies and collaborating on innovative projects. I am passionate about building efficient and scalable applications and am eager to contribute my skills to a dynamic team. With my strong technical acumen, leadership abilities, and problem-solving mindset, I am confident that I will be a valuable asset to any organization.</p>
+        </section>
+        <section style="margin-bottom:2.5em; width:100%;">
+            <h2 style="color:#4fd1c5; font-size:2rem; margin-bottom:0.5em; font-weight:700;">Skills</h2>
+            <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:1.5em; font-size:1.2rem;">
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>React</li>
+                <li>HTML &amp; CSS</li>
+                <li>SQL</li>
+                <li>Python</li>
+                <li>Data Analysis</li>
+            </ul>
+            <ul style="list-style:none; padding:0; display:flex; flex-wrap:wrap; justify-content:center; gap:1.5em; font-size:1.2rem;">
+                <li>MongoDB</li>
+                <li>Github Copilot</li>
+                <li>Spring Framework</li>
+                <li>JDBC</li>
+                <li>Maven</li>
+                <li>C++</li>
+                <li>Java 8</li>
+                <li>Leadership</li>
+            </ul>
+        </section>
+        <section>
+            <a href="/resume.pdf" class="btn" target="_blank" rel="noopener" style="font-size:1.2rem; padding:1em 2.5em;">View My Resume</a>
+        </section>
     </main>
 </body>
 </html>
