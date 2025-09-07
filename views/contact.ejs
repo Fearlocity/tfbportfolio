@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav style="display: flex; align-items: center; justify-content: space-between;">
-        <div style="display: flex; align-items: center; gap: 0.7em;">
-            <img src="/logo.png" alt="Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.07);background:#fff;" />
-            <span style="font-size:1.25em;font-weight:700;letter-spacing:0.5px;color:#4fd1c5;">Timothy Bryant</span>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="/logo.png" alt="Logo" class="logo-img" />
+            <span class="navbar-name">Timothy Bryant</span>
         </div>
-        <div style="display: flex; gap: 1.5em;">
+        <div class="navbar-links">
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/projects">Projects</a>
             <a href="/contact">Contact</a>
         </div>
     </nav>
-    <main style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:calc(80vh - 60px); width:96vw; max-width:1600px; margin:0 auto; text-align:center;">
-        <h1 style="font-size:2.5rem; margin-bottom:0.3em;">Contact</h1>
-        <p style="font-size:1.2rem; max-width:700px;">Contact form or contact details go here.</p>
+    <main class="contact-main">
+        <h1 class="contact-title">Contact</h1>
+        <p class="contact-desc">Contact form or contact details go here.</p>
     </main>
 </body>
 </html>

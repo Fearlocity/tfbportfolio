@@ -7,21 +7,67 @@
     <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-    <nav style="display: flex; align-items: center; justify-content: space-between;">
-        <div style="display: flex; align-items: center; gap: 0.7em;">
-            <img src="/logo.png" alt="Logo" style="width:36px;height:36px;border-radius:8px;object-fit:cover;box-shadow:0 1px 4px rgba(0,0,0,0.07);background:#fff;" />
-            <span style="font-size:1.25em;font-weight:700;letter-spacing:0.5px;color:#4fd1c5;">Timothy Bryant</span>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <img src="/logo.png" alt="Logo" class="logo-img" />
+            <span class="navbar-name">Timothy Bryant</span>
         </div>
-        <div style="display: flex; gap: 1.5em;">
+        <div class="navbar-links">
             <a href="/">Home</a>
             <a href="/about">About</a>
             <a href="/projects">Projects</a>
             <a href="/contact">Contact</a>
         </div>
     </nav>
-    <main style="display:flex; flex-direction:column; align-items:center; justify-content:center; min-height:calc(80vh - 60px); width:96vw; max-width:1600px; margin:0 auto; text-align:center;">
-        <h1 style="font-size:2.5rem; margin-bottom:0.3em;">Projects</h1>
-        <p style="font-size:1.2rem; max-width:700px;">Project list will be displayed here.</p>
+    <main class="projects-main">
+        <h1 class="projects-title">Projects</h1>
+        <div class="projects-list">
+            <div class="card project-card">
+                <img src="/portfolio.png" alt="Portfolio Website Preview" class="project-img" />
+                <h2 class="project-title">Portfolio Website</h2>
+                <div class="project-progress">Progress: <span class="progress-status">In Progress</span></div>
+                <p class="project-desc">A personal portfolio website built with Node.js, Express, and EJS to showcase my projects, skills, and experience. Features a modern responsive design and easy content management.</p>
+                <a href="https://github.com/fearlocity/tfbportfolio" class="btn project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+            <div class="card project-card">
+                <img src="/spacefather.png" alt="Space Father Website Preview" class="project-img" />
+                <h2 class="project-title">Space Father Website</h2>
+                <div class="project-progress">Progress: <span class="progress-status">In Progress</span></div>
+                <p class="project-desc">A full-stack entertainment platform built with Next.js and MongoDB to showcase music, podcasts, and events, featuring a responsive design, media streaming, and interactive community tools.</p>
+                <a href="https://github.com/Fearlocity/spacefather" class="btn project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+            <div class="card project-card">
+                <img src="/nopreview.png" alt="Preview" class="project-img" />
+                <h2 class="project-title"> Plant Care</h2>
+                <div class="project-progress">Progress: <span class="progress-status">Completed</span></div>
+                <p class="project-desc">A plant care application built with Node.js, Express, and TensorFlow to identify plants, detect potential illnesses, and provide personalized care reminders. Features a responsive design, cloud database integration with MongoDB, and tools to recommend plants based on user preferences.</p>
+                <a href="https://github.com/fearlocity/Flower_Identifier" class="btn project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+            <div class="card project-card">
+                <img src="/globalecon.png" alt="Global Econ Database Preview" class="project-img" />
+                <h2 class="project-title">Global Econ Database</h2>
+                <div class="project-progress">Progress: <span class="progress-status">Completed</span></div>
+                <p class="project-desc">A relational database project built with SQL to store and analyze global economic, demographic, and cultural data. Features interconnected tables for countries, cities, households, economies, languages, and ethnicities, enabling comprehensive queries and insights into worldwide economic and social trends.</p>
+                <a href="https://github.com/Fearlocity/Global-Econ-Datatbase" class="btn project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+            <div class="card project-card">
+                <img src="/spaceinvader.gif" alt="Space Invader Preview" class="project-img" />
+                <h2 class="project-title">Space Invader</h2>
+                <div class="project-progress">Progress: <span class="progress-status">Completed</span></div>
+                <p class="project-desc">A 2D arcade-style game built with Python and Pygame, recreating the classic Space Invaders experience. Features player-controlled movement, enemy waves, scoring, and collision detection for an engaging retro gameplay loop.</p>
+                <a href="https://github.com/Fearlocity/spaceInvaders_start" class="btn project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+            <div class="card project-card">
+                <img src="/crossyroad.png" alt="Crossy Road Preview" class="project-img" />
+                <h2 class="project-title">Crossy Road</h2>
+                <div class="project-progress">Progress: <span class="progress-status">Completed</span></div>
+                <p class="project-desc">A modern remake of the popular Crossy Road game built in Unreal Engine 5.1. This project features endless gameplay, dynamic obstacles, and smooth 3D visuals, allowing players to navigate characters across busy roads and rivers while aiming for high scores.</p>
+                <a href="https://github.com/Fearlocity/UE5CrossyRoadtb" class="btn project-link" target="_blank" rel="noopener">View Project</a>
+            </div>
+        </div>
     </main>
+    <footer class="projects-footer">
+        <small class="projects-disclaimer">* I have additional projects that cannot be publicly disclosed due to NDAs and other contractual obligations.</small>
+    </footer>
 </body>
 </html>
