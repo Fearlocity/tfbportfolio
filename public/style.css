@@ -311,12 +311,13 @@
 }
 .navbar-toggle {
     display: none;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 44px;
+    width: auto;
+    min-width: 70px;
     height: 44px;
-    background: rgba(26,34,51,0.92);
+    background: #2b7e75;
     border: 2px solid #4fd1c5;
     border-radius: 8px;
     cursor: pointer;
@@ -324,6 +325,7 @@
     z-index: 100;
     box-shadow: 0 2px 8px rgba(0,0,0,0.10);
     transition: background 0.2s, border 0.2s;
+    gap: 10px;
 }
 .navbar-toggle:hover {
     background: #26304a;
@@ -332,20 +334,29 @@
 .navbar-toggle span {
     display: block;
     width: 26px;
-    height: 3px;
-    margin: 4px 0;
+    height: 3.5px;
+    margin: 6px 0;
     background: #fff;
     border-radius: 2px;
     transition: 0.3s;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.08);
 }
 
 @media (max-width: 700px) {
-    .navbar {
-        flex-direction: row;
-        padding: 1em 0.7em;
+    .navbar-toggle-label {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+        margin-left: 10px;
+        position: relative;
+        top: 0;
     }
     .navbar-toggle {
         display: flex;
+    }
+    .navbar {
+        flex-direction: row;
+        padding: 1em 0.7em;
     }
     .navbar-links {
         position: absolute;
