@@ -1,3 +1,17 @@
+.navbar-toggle-label {
+    display: none;
+    color: #fff;
+    font-size: 1.08em;
+    font-weight: 600;
+    margin-left: 10px;
+    letter-spacing: 1px;
+}
+@media (max-width: 700px) {
+    .navbar-toggle-label {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}
 .contact-alert {
     max-width: 420px;
     margin: 0 auto 1.5em auto;
