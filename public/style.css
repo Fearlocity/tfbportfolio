@@ -300,13 +300,20 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 40px;
-    height: 40px;
-    background: none;
-    border: none;
+    width: 44px;
+    height: 44px;
+    background: rgba(26,34,51,0.92);
+    border: 2px solid #4fd1c5;
+    border-radius: 8px;
     cursor: pointer;
     margin-left: 1em;
-    z-index: 20;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+    transition: background 0.2s, border 0.2s;
+}
+.navbar-toggle:hover {
+    background: #26304a;
+    border-color: #38b2ac;
 }
 .navbar-toggle span {
     display: block;
