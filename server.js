@@ -31,7 +31,7 @@ app.post('/contact', async (req, res) => {
 		});
 
 		let mailOptions = {
-			from: email,
+			from: 'tbryant3614@yahoo.com',
 			to: 'tbryant3614@yahoo.com',
 			subject: `Portfolio Contact Form: ${name}`,
 			text: `Name: ${name}\nEmail: ${email}\n\n${message}`
