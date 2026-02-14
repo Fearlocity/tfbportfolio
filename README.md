@@ -1,7 +1,5 @@
 
-# Portfolio Website (Node.js/Express)
-
----
+# Portfolio Website Plan (Node.js/Express)
 
 1. Planning & Preparation
 
